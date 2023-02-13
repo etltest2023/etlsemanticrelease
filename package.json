@@ -1,0 +1,11 @@
+{
+  "name": "sematic-release",
+  "version": "1.0.0",
+  "description": "Backend for Mobis Aftersales Business Intelligence",
+  "main": "./app.js",
+  "author": "",
+  "license": "SEE LICENSE IN etl_lic.txt",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
