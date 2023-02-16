@@ -7,5 +7,10 @@
   "license": "SEE LICENSE IN etl_lic.txt",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^8.0.7",
+    "semantic-release": "^18.0.0"
   }
 }
