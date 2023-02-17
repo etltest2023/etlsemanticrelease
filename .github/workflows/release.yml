@@ -1,28 +1,25 @@
 name: Release
 
-on:
-  workflow_dispatch:
+on: 
+  pull_request:
+    branches: 
+      - main
 
 jobs:
-  release:
-    permissions:
-      contents: write
-      issues: write
-      pull-requests: write
+  test:
+    name: Test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-      - with: 
+      - uses: actions/setup-node@v1
+        with:
           node-version: 16
-      - run: npm ci
-      - run: npm install
       - run: npm ci --prefix ./backend
       - run: npm install --prefix ./backend
       - run: npm ci --prefix ./frontend
       - run: npm install --prefix ./frontend
-      - run: npm run build --prefix ./frontend
-      - run: npx semantic-release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
+      - run: rm -rf ./node_modules
+      - run: rm -rf ./backend/node_modules
+      - run: rm -rf ./frontend/node_modules
 
