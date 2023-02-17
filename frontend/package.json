@@ -10,8 +10,7 @@
     "build": "echo 'OK'"
   },
   "dependencies": {
-    "express": "^4.17.1",
-    "sematic-release": "file:.."
+    "express": "^4.17.1"
   }
   
 }
