@@ -23,5 +23,4 @@ jobs:
       - run: rm -rf ./backend/node_modules
       - run: rm -rf ./frontend/node_modules
       - run: npx semantic-release
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+   
