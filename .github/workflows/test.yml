@@ -22,7 +22,4 @@ jobs:
       - run: rm -rf ./node_modules
       - run: rm -rf ./backend/node_modules
       - run: rm -rf ./frontend/node_modules
-      - uses: ./
-        with: 
-          perso: 'jenkins'
 
