@@ -1,0 +1,17 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "Frontend",
+  "main": "./app.js",
+  "author": "",
+  "license": "SEE LICENSE IN etl_lic.txt",
+  "scripts": {
+    "dev": "vite",
+    "build": "echo 'OK'"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "sematic-release": "file:.."
+  }
+  
+}
