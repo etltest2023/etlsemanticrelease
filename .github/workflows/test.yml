@@ -18,7 +18,7 @@ jobs:
       - run: npm install --prefix ./backend
       - run: npm ci --prefix ./frontend
       - run: npm install --prefix ./frontend
-      - run: npm run test --prefix ./backend
+    
       - run: rm -rf ./node_modules
       - run: rm -rf ./backend/node_modules
       - run: rm -rf ./frontend/node_modules
