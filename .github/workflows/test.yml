@@ -1,0 +1,28 @@
+name: Run Tests
+
+on: 
+  pull_request:
+    branches: 
+      - main
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 16
+      - run: npm ci --prefix ./backend
+      - run: npm install --prefix ./backend
+      - run: npm ci --prefix ./frontend
+      - run: npm install --prefix ./frontend
+      - run: npm run test --prefix ./backend
+      - run: rm -rf ./node_modules
+      - run: rm -rf ./backend/node_modules
+      - run: rm -rf ./frontend/node_modules
+      - uses: ./
+        with: 
+          perso: 'jenkins'
+
