@@ -4,7 +4,7 @@
   "description": "Frontend",
   "main": "./app.js",
   "author": "",
-  "license": "SEE LICENSE IN etl_lic.txt",
+  "license": "SEE LICENSE IN LICENSE",
   "scripts": {
     "dev": "vite",
     "build": "echo 'OK'"
