@@ -4,7 +4,7 @@
   "description": "Release Test",
   "main": "./app.js",
   "author": "",
-  "license": "SEE LICENSE IN etl_lic.txt",
+  "license": "SEE LICENSE IN LICENSE",
   "devDependencies": {
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^8.0.7",
