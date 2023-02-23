@@ -1,8 +1,9 @@
 {
   "name": "sematic-release",
-  "version": "1.0.0",
+  "version": "2.1.0",
   "description": "Release Test",
-  "main": "./app.js",
+  "main": "./backend/app.js",
+  "private": true,
   "author": "",
   "license": "SEE LICENSE IN LICENSE",
   "devDependencies": {
