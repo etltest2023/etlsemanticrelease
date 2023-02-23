@@ -1,6 +1,6 @@
 {
   "name": "sematic-release",
-  "version": "2.1.0",
+  "version": "2.3.0",
   "description": "Release Test",
   "main": "./backend/app.js",
   "private": true,
