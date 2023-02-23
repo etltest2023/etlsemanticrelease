@@ -12,9 +12,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 18
-      - run: npm ci --prefix ./backend
       - run: npm install --prefix ./backend
-      - run: npm ci --prefix ./frontend
       - run: npm install --prefix ./frontend
     
       - run: rm -rf ./node_modules
